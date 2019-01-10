@@ -1,0 +1,29 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+orthogonal_line : A a -> d
+orthogonal_line : C c -> e
+intersect : d e -> D
+line_bisector : a -> f
+line_bisector : c -> g
+intersect : f g -> E
+segment : E D -> h
+segment : E B -> R
+const int 2 -> expr0
+power : h expr0 -> expr1
+const int 9 -> expr2
+const int 2 -> expr3
+power : R expr3 -> expr4
+product : expr2 expr4 -> expr5
+const int 2 -> expr6
+power : a expr6 -> expr7
+minus : expr5 expr7 -> expr8
+const int 2 -> expr9
+power : b expr9 -> expr10
+minus : expr8 expr10 -> expr11
+const int 2 -> expr12
+power : c expr12 -> expr13
+minus : expr11 expr13 -> expr14
+equality : expr1 expr14 -> expr15
+prove : expr15 -> k

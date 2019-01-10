@@ -1,0 +1,22 @@
+point :  -> A
+point :  -> B
+mirror : A B -> A'
+mirror : B A' -> B'
+segment : A B -> a
+segment : A B' -> b
+const int 9 -> expr0
+const Measure 0.5 -> expr1
+product : expr0 expr1 -> expr2
+const Measure 1.25 -> expr3
+product : expr2 expr3 -> expr4
+const int 2 -> expr5
+power : a expr5 -> expr6
+product : expr4 expr6 -> expr7
+const Measure 0.5 -> expr8
+const Measure 1.25 -> expr9
+product : expr8 expr9 -> expr10
+const int 2 -> expr11
+power : b expr11 -> expr12
+product : expr10 expr12 -> expr13
+equality : expr7 expr13 -> expr14
+prove : expr14 -> e

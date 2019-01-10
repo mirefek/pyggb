@@ -1,0 +1,13 @@
+point :  -> A
+point :  -> B
+point :  -> C
+point :  -> D
+polygon : A B C D -> poligon1 a b c d
+midpoint : A B -> E
+midpoint : B C -> F
+midpoint : C D -> G
+midpoint : D A -> H
+line : E F -> e
+line : H G -> f
+are_parallel : e f -> expr0
+prove : expr0 -> g

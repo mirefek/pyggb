@@ -1,0 +1,13 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+orthogonal_line : C a -> b
+intersect : a b -> D
+const int 180 -> expr0
+const AngleSize 0.017453292519943295 -> expr1
+product : expr0 expr1 -> expr2
+minus : expr2 -> expr3
+rotate : C expr3 D -> C'
+contained_by : C' b -> expr4
+prove : expr4 -> c

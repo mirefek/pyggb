@@ -1,0 +1,17 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+point :  -> C
+segment : B C -> b
+segment : C A -> c
+angular_bisector : B A C -> d
+angular_bisector : A C B -> e
+intersect : e d -> I
+orthogonal_line : I b -> f
+intersect : b f -> X
+orthogonal_line : I c -> g
+intersect : c g -> Y
+orthogonal_line : B d -> h
+intersect : h d -> L
+are_collinear : X L Y -> i
+prove : i -> j

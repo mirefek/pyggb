@@ -1,0 +1,22 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+midpoint : A B -> C
+orthogonal_line : C a -> b
+point : b -> D
+mirror : D a -> D'
+line : D A -> c
+midpoint : A D -> E
+line : E C -> d
+mirror : C E -> C'
+mirror : C' C -> C''
+midpoint : D B -> F
+line : F C -> e
+mirror : C F -> C'_1
+mirror : C'_1 C -> G
+polygon : C' C'_1 F B C'' -> poly1 c' c'_1 f b_1 c''
+polygon : C'_1 C' E A G -> poly2 c'_2 c'_3 e_1 a_1 g
+area : poly1 -> expr0
+area : poly2 -> expr1
+are_equal : expr0 expr1 -> expr2
+prove : expr2 -> h

@@ -1,0 +1,20 @@
+point :  -> A
+point :  -> B
+midpoint : A B -> F
+point :  -> C
+midpoint : A C -> E
+midpoint : B C -> D
+angular_bisector : B A C -> d
+angular_bisector : A C B -> e
+angular_bisector : C B A -> f
+line : A D -> g
+line : B E -> h
+line : C F -> i
+intersect : f d -> I
+intersect : i h -> G
+mirror : g d -> g'
+mirror : i e -> i'
+mirror : h f -> h'
+intersect : h' g' -> K
+are_concurrent : g' i' h' -> j
+prove : j -> a

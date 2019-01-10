@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+orthogonal_line : B b -> d
+orthogonal_line : C c -> e
+intersect : d e -> D
+line : A D -> f
+are_perpendicular : a f -> expr0
+prove : expr0 -> h

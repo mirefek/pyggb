@@ -1,0 +1,7 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+line : A B -> f
+intersect : c f -> C D
+equality : B C -> expr0
+prove : expr0 -> a

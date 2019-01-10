@@ -1,0 +1,17 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> c
+point : c -> D
+segment : A C -> a
+segment : B D -> b
+segment : A B -> d
+segment : C D -> e
+segment : B C -> f
+segment : A D -> g
+product : a b -> expr0
+product : d e -> expr1
+product : f g -> expr2
+sum : expr1 expr2 -> expr3
+equality : expr0 expr3 -> h
+prove : h -> i

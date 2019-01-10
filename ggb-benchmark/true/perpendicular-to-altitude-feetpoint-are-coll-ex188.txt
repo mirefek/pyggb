@@ -1,0 +1,18 @@
+point :  -> C
+point :  -> A
+segment : C A -> a
+point :  -> B
+segment : A B -> b
+segment : C B -> c
+orthogonal_line : C b -> d
+intersect : d b -> F
+orthogonal_line : A c -> e
+intersect : e d -> H
+orthogonal_line : F a -> f
+intersect : f a -> P
+orthogonal_line : F c -> g
+intersect : g c -> T
+orthogonal_line : F e -> h
+intersect : h e -> Q
+are_collinear : Q P T -> expr0
+prove : expr0 -> i

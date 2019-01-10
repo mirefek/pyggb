@@ -1,0 +1,19 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+point :  -> D
+line : C D -> b
+point : a -> E
+point : b -> F
+line : E C -> c
+line : F A -> d
+line : C B -> e
+line : B D -> f
+line : D A -> g
+line : E F -> h
+intersect : d e -> G
+intersect : c g -> H
+intersect : f h -> I
+are_collinear : G H I -> expr0
+prove : expr0 -> proof

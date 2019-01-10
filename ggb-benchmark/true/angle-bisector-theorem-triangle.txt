@@ -1,0 +1,20 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+angular_bisector : A C B -> d
+intersect : c d -> D
+segment : A D -> e
+segment : D B -> f
+const int 2 -> expr0
+power : b expr0 -> expr1
+const int 2 -> expr2
+power : f expr2 -> expr3
+product : expr1 expr3 -> expr4
+const int 2 -> expr5
+power : e expr5 -> expr6
+const int 2 -> expr7
+power : a expr7 -> expr8
+product : expr6 expr8 -> expr9
+equality : expr4 expr9 -> g
+prove : g -> h

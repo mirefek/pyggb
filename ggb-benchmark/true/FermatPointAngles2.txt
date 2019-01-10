@@ -1,0 +1,21 @@
+point :  -> A
+const AngleSize 1.0471975511965976 -> expr0
+minus : expr0 -> expr1
+point :  -> C
+rotate : A expr1 C -> E
+point :  -> B
+const AngleSize 1.0471975511965976 -> expr2
+rotate : B expr2 C -> D
+const AngleSize 1.0471975511965976 -> expr3
+minus : expr3 -> expr4
+rotate : B expr4 A -> G
+line : B E -> f
+line : A D -> g
+intersect : f g -> F
+segment : G F -> h
+segment : A F -> i
+segment : B F -> j
+angle : E F G -> α
+angle : G F D -> β
+are_congruent : α β -> b
+prove : b -> a

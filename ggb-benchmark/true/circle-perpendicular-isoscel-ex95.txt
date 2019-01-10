@@ -1,0 +1,18 @@
+point :  -> A
+point :  -> B
+midpoint : A B -> D
+segment : A B -> a
+orthogonal_line : D a -> b
+point : b -> O
+circle : O A -> c
+intersect : c b -> M C
+segment : O A -> d
+line : M d -> e
+orthogonal_line : A d -> f
+intersect : e f -> E
+distance : M D -> MD
+distance : M E -> ME
+segment : M E -> g
+segment : M D -> i
+are_congruent : g i -> expr0
+prove : expr0 -> k

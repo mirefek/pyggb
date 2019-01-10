@@ -1,0 +1,34 @@
+point :  -> O
+point :  -> N
+segment : O N -> l_1
+circle : O N -> c
+point :  -> E
+point :  -> F
+segment : E F -> l_2
+circle : N l_2 -> e
+intersect : c e -> Y X
+line : X Y -> h
+mirror : N h -> N'
+midpoint : N' O -> N''
+circle : N'' O -> a
+point : a -> C
+circle : C l_2 -> d
+intersect : d c -> B A
+line : A B -> f
+mirror : C f -> P
+line : P N -> g
+segment : N'' C -> o
+segment : O B -> k
+segment : O A -> l
+segment : C B -> j
+segment : C A -> i
+segment : B P -> m
+segment : A P -> n
+semicircle : O N -> p
+orthogonal_line : N' l_1 -> q
+intersect : p q -> D
+circle : O D -> r
+intersect : r l_1 -> G
+mirror : C r -> C'
+equality : P C' -> expr0
+prove : expr0 -> b

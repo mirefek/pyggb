@@ -1,0 +1,11 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+orthogonal_line : B b -> d
+orthogonal_line : C c -> e
+intersect : d e -> D
+orthogonal_line : A a -> f
+intersect : f e -> E
+are_equal : D E -> g
+prove : g -> h

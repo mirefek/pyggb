@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+orthogonal_line : A a -> d
+intersect : d a -> D
+orthogonal_line : C c -> e
+intersect : d e -> E
+are_collinear : E A D -> f
+prove : f -> g

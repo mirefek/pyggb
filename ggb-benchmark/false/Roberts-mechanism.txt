@@ -1,0 +1,19 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+circle : B A -> d
+point : c -> C
+midpoint : A C -> M
+circle : C A -> e
+circle : C M -> f
+intersect : f d -> E D
+circle : D B -> g
+intersect : e g -> F _
+segment : A C -> h
+segment : B D -> i
+segment : A B -> j
+segment : C D -> k
+segment : C F -> l
+segment : F D -> m
+are_collinear : A F B -> expr1
+prove : expr1 -> p

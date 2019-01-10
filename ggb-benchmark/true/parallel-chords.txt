@@ -1,0 +1,17 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+line : C a -> b
+point : b -> D
+line : A C -> c
+line : D B -> d
+line : A D -> e
+line : B C -> f
+intersect : e f -> E
+intersect : c d -> F
+line : F E -> g
+intersect : g b -> G
+midpoint : C D -> H
+equality : G H -> expr0
+prove : expr0 -> h

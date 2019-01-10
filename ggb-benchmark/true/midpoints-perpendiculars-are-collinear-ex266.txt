@@ -1,0 +1,21 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> c
+point : c -> D
+segment : A B -> a
+segment : B C -> b
+segment : C D -> d
+segment : D A -> e
+midpoint : A B -> P
+midpoint : B C -> Q
+midpoint : C D -> R
+midpoint : P R -> J
+orthogonal_line : P d -> f
+orthogonal_line : Q e -> g
+intersect : f g -> M
+orthogonal_line : P a -> h
+orthogonal_line : Q b -> i
+intersect : h i -> O
+are_collinear : O J M -> expr0
+prove : expr0 -> j

@@ -1,0 +1,11 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+orthogonal_line : A a -> d
+orthogonal_line : B b -> e
+circle : A B C -> f
+intersect : e d -> D
+mirror : D a -> D'
+are_concyclic : A B C D' -> expr0
+prove : expr0 -> g

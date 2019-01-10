@@ -1,0 +1,25 @@
+point :  -> A
+point :  -> B
+point :  -> C
+point :  -> D
+polygon : A B C D -> poly1 a b c d
+line : A D -> l
+line : B C -> m
+intersect : l m -> E
+circle : A B E -> p
+circle : C D E -> q
+intersect : p q -> F Q
+circle : A C Q -> r
+point : r -> G
+orthogonal_line : G a -> n
+orthogonal_line : G m -> s
+orthogonal_line : G c -> t
+orthogonal_line : G l -> k
+intersect : n a -> K
+intersect : s m -> L
+intersect : t c -> M
+intersect : k l -> N
+line : K N -> e
+line : M L -> f
+are_parallel : e f -> expr0
+prove : expr0 -> g

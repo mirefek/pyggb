@@ -1,0 +1,20 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point : a -> C
+point :  -> A_1
+line : A_1 a -> b
+line : A_1 A -> c
+line : B c -> d
+intersect : b d -> B_1
+line : C c -> e
+intersect : e b -> C_1
+point : c -> A_2
+line : A_2 a -> f
+intersect : f d -> B_2
+intersect : f e -> C_2
+segment : A_2 C_1 -> g
+segment : B_2 C -> h
+intersect : g h -> I
+are_collinear : A B_1 I -> expr0
+prove : expr0 -> i

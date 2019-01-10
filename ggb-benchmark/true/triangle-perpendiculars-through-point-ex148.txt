@@ -1,0 +1,22 @@
+point :  -> C
+point :  -> A
+segment : C A -> a
+point :  -> B
+ray : B C -> c
+point :  -> P
+orthogonal_line : P c -> d
+intersect : d c -> A_1
+orthogonal_line : P a -> e
+intersect : e a -> B_1
+ray : B A -> b
+orthogonal_line : P b -> f
+intersect : f b -> C_1
+midpoint : C_1 B_1 -> A_2
+midpoint : C_1 A_1 -> B_2
+midpoint : A_1 B_1 -> C_2
+orthogonal_line : A_2 c -> g
+orthogonal_line : B_2 a -> h
+intersect : h g -> I
+line : C_2 I -> i
+are_perpendicular : i b -> expr0
+prove : expr0 -> j

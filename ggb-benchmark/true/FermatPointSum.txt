@@ -1,0 +1,22 @@
+point :  -> A
+const AngleSize 1.0471975511965976 -> expr0
+minus : expr0 -> expr1
+point :  -> C
+rotate : A expr1 C -> E
+point :  -> B
+const AngleSize 1.0471975511965976 -> expr2
+rotate : B expr2 C -> D
+const AngleSize 1.0471975511965976 -> expr3
+minus : expr3 -> expr4
+rotate : B expr4 A -> G
+line : B E -> f
+line : A D -> g
+intersect : f g -> F
+segment : G F -> h
+segment : A F -> i
+segment : B F -> j
+sum : i j -> expr5
+equality : h expr5 -> a
+sum : i j -> expr6
+equality : expr6 h -> expr7
+prove : expr7 -> b

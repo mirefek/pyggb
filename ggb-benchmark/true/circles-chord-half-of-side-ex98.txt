@@ -1,0 +1,19 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+orthogonal_line : A a -> b
+point : b -> C
+segment : C B -> c
+midpoint : C B -> M
+point : a -> E
+circle : M A E -> d
+segment : A M -> e
+line : E c -> f
+intersect : d f -> _ F
+distance : E F -> EF
+distance : B C -> BC
+distance : B M -> BM
+segment : E F -> g
+segment : B M -> h
+are_congruent : g h -> expr1
+prove : expr1 -> i

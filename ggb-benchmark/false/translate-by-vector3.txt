@@ -1,0 +1,19 @@
+point :  -> A
+point :  -> B
+point :  -> C
+point :  -> D
+point :  -> E
+point :  -> F
+polygon : A B C D E F -> poly1 a b c d e f
+point :  -> G
+point :  -> H
+vector : G H -> u
+translate : A u -> A'
+translate : B u -> B'
+translate : C u -> C'
+translate : D u -> D'
+translate : E u -> E'
+translate : F u -> F'
+polygon : A' B' C' D' E' F' -> poly1' a' b' c' d' e' f'
+equality : b c' -> expr0
+prove : expr0 -> h

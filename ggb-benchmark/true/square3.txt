@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+segment : A B -> g
+orthogonal_line : B g -> b_2
+orthogonal_line : A g -> c_1
+circle : B A -> d_1
+intersect : d_1 b_2 -> D C
+orthogonal_line : D b_2 -> e
+intersect : c_1 e -> E
+polygon : A B D E -> poly1 a b c d
+are_perpendicular : a b -> expr0
+prove : expr0 -> i

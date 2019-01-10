@@ -1,0 +1,17 @@
+point :  -> C
+point :  -> A
+ray : C A -> f
+orthogonal_line : C f -> g
+point : g -> B
+segment : B A -> h
+angular_bisector : C A B -> i
+intersect : i g -> O
+circle : O C -> c
+intersect : c g -> _ D
+intersect : c h -> E
+ray : D E -> j
+intersect : f j -> F
+segment : F A -> k
+segment : A E -> l
+equality : k l -> expr2
+prove : expr2 -> a

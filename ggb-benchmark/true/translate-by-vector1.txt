@@ -1,0 +1,11 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+point :  -> C
+point :  -> D
+vector : C D -> u
+translate : A u -> A'
+translate : B u -> B'
+segment : A' B' -> a'
+are_parallel : a a' -> expr0
+prove : expr0 -> b

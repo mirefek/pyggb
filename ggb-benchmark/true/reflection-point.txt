@@ -1,0 +1,7 @@
+point :  -> A
+point :  -> B
+mirror : A B -> A'
+segment : A' B -> a
+segment : B A -> b
+equality : a b -> expr0
+prove : expr0 -> c

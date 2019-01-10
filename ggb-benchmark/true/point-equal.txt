@@ -1,0 +1,3 @@
+point :  -> A
+equality : A A -> expr0
+prove : expr0 -> a

@@ -1,0 +1,25 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> Vieleck1 c a b
+const AngleSize 0.5235987755982988 -> expr0
+minus : expr0 -> expr1
+rotate : B expr1 A -> B'
+line : A B' -> f
+line_bisector : c -> g
+intersect : f g -> D
+const AngleSize 0.5235987755982988 -> expr2
+rotate : C expr2 A -> C'
+line : A C' -> h
+line_bisector : b -> i
+intersect : h i -> E
+const AngleSize 0.5235987755982988 -> expr3
+minus : expr3 -> expr4
+rotate : C expr4 B -> C'_1
+line : C'_1 B -> j
+line_bisector : a -> k
+intersect : j k -> F
+segment : E D -> l
+segment : D F -> m
+equality : l m -> expr5
+prove : expr5 -> d

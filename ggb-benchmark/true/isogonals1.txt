@@ -1,0 +1,16 @@
+point :  -> B
+point :  -> A
+point :  -> C
+angular_bisector : B A C -> d
+angular_bisector : A C B -> e
+angular_bisector : C B A -> f
+intersect : f d -> I
+polygon : A B C -> poligon1 c a b
+orthogonal_line : A a -> g
+orthogonal_line : B b -> h
+orthogonal_line : C c -> i
+mirror : g d -> g'
+mirror : i e -> i'
+mirror : h f -> h'
+are_concurrent : g' h' i' -> j
+prove : j -> k

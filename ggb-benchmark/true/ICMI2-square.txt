@@ -1,0 +1,24 @@
+point :  -> A
+point :  -> B
+segment : A B -> f
+orthogonal_line : B f -> g
+circle : B A -> c
+intersect : c g -> C _
+orthogonal_line : C g -> h
+orthogonal_line : A f -> i
+intersect : h i -> D
+segment : A D -> j
+segment : D C -> k
+segment : C B -> l
+midpoint : f -> E
+midpoint : C B -> F
+segment : D E -> m
+segment : D F -> n
+segment : A C -> p
+intersect : m p -> G
+intersect : n p -> H
+segment : A G -> q
+segment : G H -> r
+segment : H C -> s
+equality : q r -> expr1
+prove : expr1 -> a

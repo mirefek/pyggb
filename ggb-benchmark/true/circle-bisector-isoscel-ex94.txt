@@ -1,0 +1,18 @@
+point :  -> E
+point :  -> P
+segment : E P -> a
+orthogonal_line : E a -> b
+point : b -> O
+circle : O E -> c
+point : c -> A
+segment : A P -> d
+intersect : c d -> B B_1
+segment : A E -> e
+angular_bisector : E P A -> f
+intersect : f e -> C
+segment : B E -> g
+intersect : f g -> D
+segment : C E -> h
+segment : D E -> i
+equality : h i -> j
+prove : j -> k

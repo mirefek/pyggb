@@ -1,0 +1,22 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> c
+segment : C B -> a
+segment : A C -> d
+line : A a -> e
+intersect : c e -> D_1 D
+orthogonal_line : D d -> f
+intersect : d f -> F
+line : A B -> b
+orthogonal_line : D b -> g
+intersect : g b -> G
+midpoint : A C -> E
+midpoint : B C -> H
+orthogonal_line : E d -> h
+orthogonal_line : H a -> i
+intersect : h i -> O
+line : F G -> j
+line : A O -> k
+are_parallel : j k -> expr0
+prove : expr0 -> l

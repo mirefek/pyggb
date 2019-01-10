@@ -1,0 +1,9 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+midpoint : a -> C
+segment : A C -> b
+const int 3 -> expr0
+product : expr0 b -> expr1
+equality : expr1 a -> c
+prove : c -> d

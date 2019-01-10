@@ -1,0 +1,19 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+point :  -> C
+segment : B C -> b
+segment : C A -> c
+line : C a -> d
+point : b -> E
+point : d -> D
+segment : D A -> e
+line : E a -> f
+intersect : e f -> H
+segment : D B -> g
+intersect : g f -> F
+intersect : c f -> G
+segment : H G -> i
+segment : F E -> j
+are_congruent : i j -> expr0
+prove : expr0 -> h

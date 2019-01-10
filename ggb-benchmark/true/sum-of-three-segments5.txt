@@ -1,0 +1,54 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+circle : B A -> d
+intersect : c d -> _ C
+line : A B -> a
+line : A C -> b
+line : B C -> e
+point :  -> D
+orthogonal_line : D e -> f
+orthogonal_line : D b -> g
+orthogonal_line : D a -> h
+intersect : e f -> E
+intersect : b g -> F
+intersect : a h -> G
+segment : D E -> i
+segment : D F -> j
+segment : D G -> k
+orthogonal_line : A e -> l
+intersect : e l -> H
+segment : A H -> m
+sum : i j -> expr1
+sum : expr1 k -> expr2
+minus : expr2 m -> p
+sum : i j -> expr3
+minus : expr3 k -> expr4
+minus : expr4 m -> q
+sum : i k -> expr5
+minus : expr5 j -> expr6
+minus : expr6 m -> r
+sum : i m -> expr7
+minus : expr7 k -> expr8
+minus : expr8 j -> s
+minus : i j -> expr9
+minus : expr9 k -> expr10
+minus : expr10 m -> t
+sum : i k -> expr11
+sum : expr11 m -> expr12
+minus : expr12 j -> u
+sum : i j -> expr13
+sum : expr13 m -> expr14
+minus : expr14 k -> v
+product : p q -> expr15
+product : expr15 r -> expr16
+product : expr16 s -> expr17
+product : expr17 t -> expr18
+product : expr18 u -> expr19
+product : expr19 v -> expr20
+const int 0 -> expr21
+equality : expr20 expr21 -> n
+sum : i j -> expr22
+sum : expr22 k -> expr23
+sum : expr23 m -> w
+prove : n -> o

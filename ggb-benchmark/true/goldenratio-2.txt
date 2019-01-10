@@ -1,0 +1,14 @@
+point :  -> A
+point :  -> B
+const int 10 -> expr0
+polygon : A B expr0 -> poly1 f g h i j k l m n p C D E F G H I J
+const int 5 -> expr1
+polygon : A B expr1 -> poly2 t a b c d K L M
+segment : L E -> q
+segment : K E -> r
+segment : L A -> s
+sum : r f -> expr2
+ratio : expr2 r -> expr3
+ratio : r f -> expr4
+equality : expr3 expr4 -> expr5
+prove : expr5 -> e

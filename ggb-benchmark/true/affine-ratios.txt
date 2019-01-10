@@ -1,0 +1,22 @@
+point :  -> A
+point :  -> B
+line : A B -> f
+point :  -> P
+point :  -> P'
+line : P P' -> g
+point :  -> Q
+line : Q g -> h
+line : Q P -> i
+intersect : f i -> C
+line : C P' -> j
+intersect : h j -> Q'
+intersect : f g -> D
+intersect : f h -> E
+segment : P D -> k
+segment : P' D -> l
+segment : Q E -> m
+segment : Q' E -> n
+ratio : k l -> expr0
+ratio : m n -> expr1
+equality : expr0 expr1 -> expr2
+prove : expr2 -> a

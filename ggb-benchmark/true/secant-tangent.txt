@@ -1,0 +1,15 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+tangent : B c -> f
+point : c -> C
+line : A C -> g
+intersect : c g -> _ D
+intersect : f g -> E
+segment : E B -> h
+segment : E C -> i
+segment : E D -> j
+product : h h -> expr1
+product : i j -> expr2
+equality : expr1 expr2 -> a
+prove : a -> b

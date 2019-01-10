@@ -1,0 +1,15 @@
+point :  -> B
+point :  -> A
+segment : B A -> a
+point :  -> C
+segment : A C -> b
+segment : C B -> c
+orthogonal_line : A c -> d
+intersect : c d -> D
+midpoint : D A -> O
+circle : O D -> e
+intersect : e a -> F_1 E
+intersect : e b -> F G
+circle : E F C -> f
+are_concyclic : E F B C -> expr0
+prove : expr0 -> g

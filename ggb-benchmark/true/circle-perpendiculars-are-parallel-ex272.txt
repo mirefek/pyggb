@@ -1,0 +1,17 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> c
+point : c -> D
+segment : D A -> a
+segment : A B -> b
+segment : B C -> d
+line : C D -> e
+orthogonal_line : A b -> f
+intersect : f e -> A_1
+orthogonal_line : C e -> g
+intersect : g b -> C_1
+line : A_1 C_1 -> h
+line : D B -> i
+are_parallel : h i -> expr0
+prove : expr0 -> j

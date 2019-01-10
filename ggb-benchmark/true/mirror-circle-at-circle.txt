@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+point :  -> C
+point :  -> D
+circle : C D -> d
+mirror : d c -> d'
+mirror : D c -> D'
+point : d -> E
+mirror : E c -> E'
+contained_by : D' d' -> expr0
+prove : expr0 -> a

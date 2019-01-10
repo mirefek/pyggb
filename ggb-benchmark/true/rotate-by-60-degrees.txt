@@ -1,0 +1,25 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+const int 60 -> expr0
+const AngleSize 0.017453292519943295 -> expr1
+product : expr0 expr1 -> expr2
+rotate : A expr2 B -> A'
+const int 60 -> expr3
+const AngleSize 0.017453292519943295 -> expr4
+product : expr3 expr4 -> expr5
+minus : expr5 -> expr6
+rotate : A expr6 B -> A'_1
+orthogonal_line : A'_1 a -> b
+line : A'_1 B -> c
+intersect : b a -> C
+segment : C B -> d
+segment : B A'_1 -> e
+const int 4 -> expr7
+const int 2 -> expr8
+power : d expr8 -> expr9
+product : expr7 expr9 -> expr10
+const int 2 -> expr11
+power : e expr11 -> expr12
+equality : expr10 expr12 -> expr13
+prove : expr13 -> f

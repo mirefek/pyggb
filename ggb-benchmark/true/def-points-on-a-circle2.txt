@@ -1,0 +1,7 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> c
+point : c -> D
+are_concyclic : A B C D -> expr0
+prove : expr0 -> a

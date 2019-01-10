@@ -1,0 +1,17 @@
+point :  -> C
+point :  -> A
+segment : C A -> b
+orthogonal_line : C b -> b_1
+point : b_1 -> B
+segment : B A -> c
+orthogonal_line : C c -> d
+intersect : d c -> D
+segment : B D -> p
+segment : D A -> q
+segment : D C -> h
+segment : B C -> a
+product : p q -> expr0
+const int 2 -> expr1
+power : h expr1 -> expr2
+equality : expr0 expr2 -> e
+prove : e -> f

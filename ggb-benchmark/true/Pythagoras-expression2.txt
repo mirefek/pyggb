@@ -1,0 +1,32 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+orthogonal_line : A a -> b
+point : b -> C
+segment : C A -> c
+segment : A B -> d
+segment : C B -> e
+point : a -> D
+orthogonal_line : D a -> h
+point : h -> E
+segment : B D -> i
+segment : D E -> j
+segment : E B -> k
+const int 2 -> expr0
+power : c expr0 -> expr1
+const int 2 -> expr2
+power : d expr2 -> expr3
+sum : expr1 expr3 -> expr4
+const int 2 -> expr5
+power : i expr5 -> expr6
+sum : expr4 expr6 -> expr7
+const int 2 -> expr8
+power : j expr8 -> expr9
+sum : expr7 expr9 -> expr10
+const int 2 -> expr11
+power : e expr11 -> expr12
+const int 2 -> expr13
+power : k expr13 -> expr14
+sum : expr12 expr14 -> expr15
+equality : expr10 expr15 -> expr16
+prove : expr16 -> f

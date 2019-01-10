@@ -1,0 +1,18 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+orthogonal_line : A a -> b
+point : b -> C
+const int 90 -> expr0
+const AngleSize 0.017453292519943295 -> expr1
+product : expr0 expr1 -> expr2
+minus : expr2 -> expr3
+rotate : C expr3 A -> C'
+const int 90 -> expr4
+const AngleSize 0.017453292519943295 -> expr5
+product : expr4 expr5 -> expr6
+rotate : C expr6 A -> C'_1
+segment : C'_1 A -> c
+segment : A C' -> d
+are_congruent : c d -> expr7
+prove : expr7 -> e

@@ -1,0 +1,17 @@
+point :  -> A
+point :  -> B
+const int 7 -> expr0
+polygon : A B expr0 -> poly1 AB g h i j k l C D E F G
+segment : A D -> m
+segment : G C -> GC
+intersect : m GC -> H
+segment : H E -> EH
+segment : B H -> BH
+const int 2 -> expr1
+power : EH expr1 -> expr2
+const int 2 -> expr3
+const int 2 -> expr4
+power : AB expr4 -> expr5
+product : expr3 expr5 -> expr6
+equality : expr2 expr6 -> expr7
+prove : expr7 -> a

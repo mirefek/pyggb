@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+point :  -> C
+line : A C -> a
+intersect : c a -> E D
+segment : D B -> b
+segment : B E -> d
+are_perpendicular : b d -> expr0
+prove : expr0 -> e

@@ -1,0 +1,19 @@
+point :  -> O
+point :  -> B
+circle : O B -> c
+point : c -> C
+point : c -> D
+point : c -> A
+segment : B D -> a
+segment : C A -> b
+intersect : a b -> E
+segment : O E -> d
+orthogonal_line : E d -> e
+line : A D -> f
+line : B C -> g
+intersect : e f -> F
+intersect : e g -> G
+segment : G E -> h
+segment : E F -> i
+equality : h i -> j
+prove : j -> k

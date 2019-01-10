@@ -1,0 +1,17 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+line : C a -> b
+point : b -> D
+line : A C -> c
+line : B D -> d
+intersect : c d -> E
+segment : C E -> e
+segment : A E -> f
+segment : C D -> g
+segment : A B -> h
+ratio : e f -> expr0
+ratio : g h -> expr1
+equality : expr0 expr1 -> i
+prove : i -> j

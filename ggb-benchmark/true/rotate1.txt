@@ -1,0 +1,15 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+point :  -> D
+line : C D -> b
+intersect : a b -> E
+angle : B E C -> α
+rotate : C α E -> G
+line : E G -> c
+minus : α -> expr0
+rotate : C expr0 E -> F
+line : G F -> d
+are_perpendicular : b d -> e
+prove : e -> f

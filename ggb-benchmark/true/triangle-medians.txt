@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poligon1 c a b
+midpoint : B C -> D
+midpoint : C A -> E
+midpoint : A B -> F
+line : C F -> d
+line : D A -> e
+intersect : d e -> G
+are_collinear : B G E -> expr0
+prove : expr0 -> f

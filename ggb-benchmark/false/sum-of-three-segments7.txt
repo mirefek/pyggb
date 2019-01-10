@@ -1,0 +1,27 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+circle : B A -> d
+intersect : c d -> _ C
+line : A B -> a
+line : A C -> b
+line : B C -> e
+point :  -> D
+orthogonal_line : D e -> f
+orthogonal_line : D b -> g
+orthogonal_line : D a -> h
+intersect : e f -> E
+intersect : b g -> F
+intersect : a h -> G
+segment : D E -> i
+segment : D F -> j
+segment : D G -> k
+orthogonal_line : A e -> l
+intersect : e l -> H
+segment : A H -> m
+const int 2 -> expr1
+product : expr1 i -> expr2
+sum : expr2 j -> expr3
+sum : expr3 k -> expr4
+equality : expr4 m -> n
+prove : n -> o

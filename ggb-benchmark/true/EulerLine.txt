@@ -1,0 +1,19 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+midpoint : A B -> D
+midpoint : B C -> E
+line : A E -> d
+line : C D -> e
+intersect : d e -> F
+line : A B -> h
+line : C B -> i
+orthogonal_line : A i -> j
+orthogonal_line : C h -> k
+intersect : j k -> H
+line_bisector : B C -> f
+line_bisector : B A -> g
+intersect : f g -> G
+are_collinear : F G H -> l
+prove : l -> m

@@ -1,0 +1,16 @@
+point :  -> A
+point :  -> B
+const int 4 -> expr0
+polygon : A B expr0 -> poly1 f g h i C D
+const int 4 -> expr1
+polygon : C B expr1 -> poly2 j k l m E F
+segment : A F -> n
+circle : A B -> c
+intersect : c n -> G
+midpoint : G F -> H
+segment : G H -> p
+ratio : f p -> expr3
+minus : f p -> expr4
+ratio : p expr4 -> expr5
+equality : expr3 expr5 -> expr6
+prove : expr6 -> a

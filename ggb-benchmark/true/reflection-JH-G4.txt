@@ -1,0 +1,13 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+point :  -> D
+line : C D -> b
+mirror : a b -> a'
+point : a -> E
+mirror : E b -> E'
+mirror : A b -> A'
+mirror : B b -> B'
+are_collinear : A' B' E' -> c
+prove : c -> d

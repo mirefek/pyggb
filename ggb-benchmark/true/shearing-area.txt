@@ -1,0 +1,22 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> P
+line : P a -> f
+point : f -> P'
+point :  -> Q
+line : Q f -> g
+line : P Q -> h
+intersect : a h -> C
+line : C P' -> i
+intersect : g i -> Q'
+point :  -> R
+line : R f -> j
+line : P R -> k
+intersect : a k -> D
+line : D P' -> l
+intersect : j l -> R'
+polygon : P Q R -> Vieleck1 r p q
+polygon : P' Q' R' -> Vieleck2 r' p' q'
+equality : Vieleck1 Vieleck2 -> expr0
+prove : expr0 -> b

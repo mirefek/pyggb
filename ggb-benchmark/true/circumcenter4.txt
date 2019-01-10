@@ -1,0 +1,9 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+line_bisector : a -> h
+line_bisector : b -> i
+line_bisector : c -> j
+are_concurrent : h i j -> expr0
+prove : expr0 -> k

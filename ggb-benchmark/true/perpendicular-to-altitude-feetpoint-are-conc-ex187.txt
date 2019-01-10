@@ -1,0 +1,14 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+point :  -> C
+segment : B C -> b
+segment : C A -> c
+orthogonal_line : A b -> d
+intersect : d b -> D
+orthogonal_line : D a -> e
+intersect : e a -> Q
+orthogonal_line : D c -> f
+intersect : f c -> P
+are_concyclic : B C Q P -> g
+prove : g -> h

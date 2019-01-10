@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+point :  -> C
+segment : B C -> b
+segment : C A -> c
+mirror : A b -> A'
+segment : B A' -> d
+segment : A' C -> e
+orthogonal_line : A b -> f
+equality : a d -> expr0
+prove : expr0 -> g

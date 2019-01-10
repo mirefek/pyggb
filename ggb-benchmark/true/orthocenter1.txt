@@ -1,0 +1,13 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+line : C A -> b
+line : C B -> c
+orthogonal_line : C a -> d
+orthogonal_line : B b -> e
+intersect : d e -> D
+orthogonal_line : A c -> f
+intersect : c f -> E
+are_collinear : A D E -> g
+prove : g -> h

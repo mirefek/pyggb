@@ -1,0 +1,7 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+orthogonal_line : B a -> b
+point : b -> C
+equality : C A -> expr0
+prove : expr0 -> c

@@ -1,0 +1,21 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+line : B C -> b
+line : C A -> c
+midpoint : A C -> D
+midpoint : C B -> E
+midpoint : B A -> F
+orthogonal_line : B c -> d
+orthogonal_line : C a -> e
+orthogonal_line : A b -> f
+intersect : b f -> G
+intersect : c d -> H
+intersect : a e -> I
+intersect : d e -> J
+midpoint : J B -> K
+midpoint : J C -> L
+midpoint : J A -> M
+are_concyclic : I K G E -> expr0
+prove : expr0 -> g

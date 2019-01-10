@@ -1,0 +1,14 @@
+point :  -> C
+point :  -> A
+segment : C A -> a
+point :  -> B
+segment : A B -> b
+segment : B C -> c
+midpoint : B C -> D
+midpoint : A C -> E
+midpoint : A B -> F
+segment : B E -> d
+segment : A D -> e
+intersect : d e -> M
+are_collinear : C M F -> expr0
+prove : expr0 -> f

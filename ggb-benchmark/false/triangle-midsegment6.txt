@@ -1,0 +1,15 @@
+point :  -> C
+point :  -> A
+line : C A -> f
+point :  -> B
+line : C B -> g
+line : B A -> h
+segment : A C -> i
+midpoint : A C -> D
+midpoint : C B -> E
+line : D E -> k
+segment : D E -> m
+const int 2 -> expr0
+product : expr0 m -> expr1
+equality : expr1 i -> expr2
+prove : expr2 -> n

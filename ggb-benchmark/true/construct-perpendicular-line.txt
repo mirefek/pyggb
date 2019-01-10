@@ -1,0 +1,19 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+circle : B C -> c
+intersect : c a -> E D
+radius : c -> expr0
+distance : A B -> expr1
+sum : expr0 expr1 -> expr2
+circle : D expr2 -> d
+radius : c -> expr3
+distance : A B -> expr4
+sum : expr3 expr4 -> expr5
+circle : E expr5 -> e
+intersect : d e -> G F
+line : F B -> b
+orthogonal_line : B a -> f
+are_perpendicular : a b -> expr6
+prove : expr6 -> g

@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+line : C a -> b
+point : b -> D
+area : A B C -> expr0
+area : A B D -> expr1
+are_equal : expr0 expr1 -> expr2
+prove : expr2 -> d

@@ -1,0 +1,9 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poligon1 c a b
+angular_bisector : B A C -> d
+angular_bisector : A C B -> e
+angular_bisector : C B A -> f
+are_concurrent : d e f -> expr0
+prove : expr0 -> g

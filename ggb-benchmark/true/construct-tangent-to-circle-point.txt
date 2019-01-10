@@ -1,0 +1,17 @@
+point :  -> A
+point :  -> C
+line : A C -> a
+circle : C A -> d
+radius : d -> expr0
+circle : A expr0 -> e
+intersect : d e -> E _
+intersect : d e -> _ F
+line : E F -> b
+intersect : a b -> G
+circle : G A -> f
+point : f -> B
+segment : A B -> c
+line : B C -> g
+are_perpendicular : c g -> expr3
+circle : A B -> k
+prove : expr3 -> h

@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+ray : A B -> a
+point :  -> C
+point :  -> D
+line : C D -> b
+mirror : A b -> A'
+mirror : B b -> B'
+ray : A A' -> c
+ray : B B' -> d
+are_parallel : d c -> expr0
+prove : expr0 -> e

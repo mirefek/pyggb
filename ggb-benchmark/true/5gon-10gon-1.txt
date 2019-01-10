@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+const int 10 -> expr0
+polygon : A B expr0 -> poly1 f g h i j k l m n p C D E F G H I J
+const int 5 -> expr1
+polygon : A B expr1 -> poly2 q r s t a K L M
+const int 5 -> expr2
+polygon : F G expr2 -> poly3 b c d e f_1 N O P
+equality : O L -> expr3
+prove : expr3 -> o

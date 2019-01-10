@@ -1,0 +1,6 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point : a -> C
+are_collinear : A B C -> expr0
+prove : expr0 -> b

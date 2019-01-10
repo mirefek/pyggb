@@ -1,0 +1,15 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+orthogonal_line : A a -> d
+orthogonal_line : B b -> e
+intersect : d a -> D
+intersect : e b -> E
+segment : A D -> h_a
+segment : B E -> h_b
+product : h_a a -> expr0
+const int 2 -> expr1
+ratio : expr0 expr1 -> f
+equality : poly1 f -> g
+prove : g -> h

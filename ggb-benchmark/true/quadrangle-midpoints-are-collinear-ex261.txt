@@ -1,0 +1,26 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+point :  -> C
+segment : B C -> b
+point :  -> D
+segment : C D -> c
+segment : D A -> d
+midpoint : A B -> P
+midpoint : B C -> Q
+midpoint : C D -> R
+midpoint : D A -> S
+segment : D Q -> e
+segment : B R -> f
+intersect : e f -> A_1
+segment : S C -> g
+segment : A R -> h
+intersect : h g -> B_1
+segment : A Q -> i
+segment : C P -> j
+intersect : j i -> D_1
+segment : D_1 D -> k
+segment : B B_1 -> l
+intersect : k l -> J
+are_collinear : A J A_1 -> expr0
+prove : expr0 -> m

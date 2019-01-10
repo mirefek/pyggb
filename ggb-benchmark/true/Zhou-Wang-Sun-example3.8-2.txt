@@ -1,0 +1,17 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> t1 c a b
+circle : A B -> d
+circle : B A -> e
+intersect : d e -> D _
+circle : C B -> f
+circle : B C -> g
+intersect : f g -> _ E
+circle : A C -> h
+circle : C A -> k
+segment : C E -> i
+intersect : h k -> F _
+segment : D F -> j
+equality : i j -> expr3
+prove : expr3 -> l

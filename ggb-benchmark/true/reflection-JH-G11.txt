@@ -1,0 +1,9 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+point :  -> D
+line : C D -> b
+mirror : a b -> a'
+are_concurrent : a a' b -> c
+prove : c -> d

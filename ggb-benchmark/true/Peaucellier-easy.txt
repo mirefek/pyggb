@@ -1,0 +1,21 @@
+point :  -> O
+point :  -> N
+segment : O N -> l_1
+circle : O N -> c
+point :  -> E
+point :  -> F
+segment : E F -> l_2
+circle : N l_2 -> e
+intersect : c e -> Y X
+line : X Y -> h
+mirror : N h -> N'
+midpoint : N' O -> N''
+circle : N'' O -> p
+point : p -> D
+circle : D l_2 -> q
+intersect : q c -> H G
+line : G H -> r
+mirror : D r -> D'
+line : D' N -> s
+are_perpendicular : s l_1 -> expr0
+prove : expr0 -> b

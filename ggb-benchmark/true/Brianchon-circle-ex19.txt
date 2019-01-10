@@ -1,0 +1,24 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> c
+point : c -> D
+point : c -> E
+point : c -> F
+tangent : A c -> a
+tangent : B c -> b
+tangent : C c -> d
+tangent : D c -> e
+tangent : E c -> f
+tangent : F c -> g
+intersect : a b -> G
+intersect : b d -> H
+intersect : d e -> I
+intersect : e f -> J
+intersect : f g -> K
+intersect : a g -> L
+line : G J -> h
+line : K H -> i
+line : I L -> j
+are_concurrent : h i j -> k
+prove : k -> l

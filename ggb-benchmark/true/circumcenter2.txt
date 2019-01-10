@@ -1,0 +1,13 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+line : C A -> b
+line : B C -> c
+line_bisector : A B -> d
+line_bisector : C B -> e
+intersect : d e -> D
+midpoint : A C -> E
+line : D E -> f
+are_perpendicular : f b -> g
+prove : g -> h

@@ -1,0 +1,9 @@
+point :  -> B
+point :  -> C
+circle : B C -> c
+point :  -> A
+tangent : A c -> b a
+point : b -> D
+point : b -> E
+are_collinear : A D E -> expr0
+prove : expr0 -> d

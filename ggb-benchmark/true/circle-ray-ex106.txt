@@ -1,0 +1,29 @@
+point :  -> A
+point :  -> B
+ray : A B -> a
+point :  -> C
+circle : C A B -> c
+point : c -> D
+ray : C D -> b
+intersect : b a -> E
+segment : D A -> d
+line : E d -> e
+ray : C B -> f
+intersect : f e -> F
+midpoint : A D -> G_1
+midpoint : B A -> H
+orthogonal_line : G_1 d -> g
+orthogonal_line : H a -> h
+intersect : h g -> O
+segment : O F -> i
+midpoint : O F -> I
+circle : I F -> k
+intersect : k c -> K G
+segment : O G -> j
+distance : F G -> FG
+distance : F E -> FE
+segment : G F -> m
+segment : G F -> n
+segment : F E -> p
+are_congruent : n p -> expr0
+prove : expr0 -> l

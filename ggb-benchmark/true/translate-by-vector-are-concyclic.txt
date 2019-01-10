@@ -1,0 +1,14 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+point :  -> C
+point :  -> D
+vector : C D -> u
+translate : A u -> A'
+translate : B u -> B'
+segment : A' B' -> a'
+circle : A A' B -> d
+center : d -> E
+point : d -> F
+are_concyclic : A B A' F -> expr0
+prove : expr0 -> b

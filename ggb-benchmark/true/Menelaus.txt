@@ -1,0 +1,25 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+ray : A B -> d
+point :  -> D_1
+point :  -> E_1
+line : D_1 E_1 -> e
+intersect : b e -> E
+intersect : a e -> D
+intersect : d e -> F
+segment : A F -> f
+segment : F B -> g
+segment : B D -> h
+segment : D C -> i
+segment : C E -> j
+segment : E A -> k
+ratio : f g -> expr0
+product : expr0 h -> expr1
+ratio : expr1 i -> expr2
+product : expr2 j -> expr3
+ratio : expr3 k -> expr4
+const int 1 -> expr5
+equality : expr4 expr5 -> l
+prove : l -> m

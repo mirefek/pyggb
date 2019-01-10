@@ -1,0 +1,14 @@
+point :  -> A
+point :  -> B
+const int 13 -> expr0
+polygon : A B expr0 -> poly1 a g_1 h i j k l m n p q r s C D E F G H I J K L M
+segment : B F -> b_1
+segment : B H -> d
+segment : A C -> e
+intersect : d e -> N
+intersect : b_1 e -> O
+segment : A N -> b
+segment : O F -> c
+sum : a c -> expr1
+equality : expr1 d -> expr2
+prove : expr2 -> f

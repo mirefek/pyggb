@@ -1,0 +1,7 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+point :  -> C
+mirror : C c -> C'
+are_collinear : A C' C -> expr0
+prove : expr0 -> a

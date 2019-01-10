@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+angular_bisector : A B C -> f
+angular_bisector : B C A -> g
+angular_bisector : C A B -> h
+intersect : f g -> D
+contained_by : D h -> expr0
+prove : expr0 -> d

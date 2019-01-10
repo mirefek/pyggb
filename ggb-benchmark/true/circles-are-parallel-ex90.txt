@@ -1,0 +1,21 @@
+point :  -> O
+point :  -> X
+line : O X -> a
+orthogonal_line : X a -> b
+point : b -> A
+circle : O A -> c
+intersect : c b -> B_1 B
+point : c -> C
+point : c -> E
+point : a -> O_1
+circle : O_1 A -> d
+line : C A -> e
+line : E B -> f
+intersect : d e -> D D_1
+intersect : d f -> F G
+line : C E -> g
+line : D F -> h
+distance : E C -> EC
+distance : D F -> DF
+are_parallel : g h -> i
+prove : i -> j

@@ -1,0 +1,11 @@
+point :  -> B
+point :  -> C
+circle : B C -> c
+point :  -> A
+tangent : A c -> b a
+orthogonal_line : B b -> d
+intersect : b d -> D
+segment : D B -> e
+segment : B C -> f
+equality : e f -> expr0
+prove : expr0 -> g

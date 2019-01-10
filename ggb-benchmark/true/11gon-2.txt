@@ -1,0 +1,25 @@
+point :  -> A
+point :  -> B
+const int 11 -> expr0
+polygon : A B expr0 -> poligon1 f g h i j k l m n p q C D E F G H I J K
+polygon : A C E G I K B D F H J -> poligon2 a c e g_1 i_1 k_1 b d f_1 h_1 j_1
+polygon : A D G J B E H K C F I -> poligon3 a_1 d_1 g_2 j_2 b_1 e_1 h_2 k_2 c_1 f_2 i_2
+segment : A G -> s
+segment : H D -> t
+intersect : s t -> L
+segment : A L -> l_1
+segment : A D -> m_1
+segment : A C -> r
+segment : B G -> n_1
+intersect : r n_1 -> M
+segment : A M -> p_1
+polygon : A E I B F J C G K D H -> poligon4 a_2 e_2 i_3 b_2 f_3 j_3 c_2 g_3 k_3 d_2 h_3
+polygon : A F K E J D I C H B G -> poligon5 a_3 f_4 k_4 e_3 j_4 d_3 i_4 c_3 h_4 b_3 g_4
+segment : A K -> q_1
+segment : I F -> r_1
+line : K A -> s_1
+line : I F -> t_1
+intersect : s_1 t_1 -> N
+segment : N A -> l_2
+equality : l_1 m_1 -> expr1
+prove : expr1 -> o

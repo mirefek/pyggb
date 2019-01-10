@@ -1,0 +1,11 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+line_bisector : c -> d
+line_bisector : b -> e
+intersect : d e -> D
+line_bisector : a -> f
+intersect : e f -> E
+equality : D E -> expr0
+prove : expr0 -> g

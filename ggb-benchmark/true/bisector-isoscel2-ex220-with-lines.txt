@@ -1,0 +1,26 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+line : B C -> b
+line : C A -> c
+segment : A B -> d
+segment : B C -> e
+segment : C A -> f
+angular_bisector : d f -> h g
+intersect : h b -> U
+circle : A B C -> k
+midpoint : A B -> D
+midpoint : A C -> E
+orthogonal_line : D d -> i
+orthogonal_line : E f -> j
+intersect : i j -> O
+segment : A O -> l
+orthogonal_line : U l -> m
+intersect : c m -> P
+segment : A P -> n
+distance : A B -> q
+distance : A P -> p
+segment : A B -> r
+are_congruent : n r -> expr0
+prove : expr0 -> o

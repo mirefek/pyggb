@@ -1,0 +1,19 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> t1 c a b
+const int 4 -> expr0
+polygon : C A expr0 -> poly1 f g h i D E
+circle : C B -> d
+orthogonal_line : C a -> j
+intersect : d j -> _ F
+orthogonal_line : F j -> k
+orthogonal_line : B a -> l
+intersect : k l -> G
+segment : F E -> m
+midpoint : c -> H
+segment : H C -> n
+const int 2 -> expr2
+product : expr2 n -> expr3
+equality : expr3 m -> expr4
+prove : expr4 -> e

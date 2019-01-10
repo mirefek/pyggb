@@ -1,0 +1,18 @@
+point :  -> C
+point :  -> D
+segment : C D -> a
+point :  -> A
+point :  -> B
+segment : A B -> b
+segment : B D -> c
+line : A c -> d
+intersect : d a -> E
+segment : C B -> e
+line : E e -> f
+intersect : f b -> F
+line : F D -> g
+line : A C -> h
+distance : D F -> DF
+distance : A C -> AC
+are_parallel : g h -> expr0
+prove : expr0 -> i

@@ -1,0 +1,8 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+line : C a -> b
+mirror : a b -> a'
+are_parallel : a a' -> c
+prove : c -> d

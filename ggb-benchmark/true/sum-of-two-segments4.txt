@@ -1,0 +1,43 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+line : A B -> b
+point : b -> C
+segment : C A -> c
+segment : C B -> d
+const int 4 -> expr0
+power : a expr0 -> expr1
+minus : expr1 -> expr2
+const int 4 -> expr3
+power : c expr3 -> expr4
+minus : expr2 expr4 -> expr5
+const int 4 -> expr6
+power : d expr6 -> expr7
+minus : expr5 expr7 -> expr8
+const int 2 -> expr9
+const int 2 -> expr10
+power : a expr10 -> expr11
+product : expr9 expr11 -> expr12
+const int 2 -> expr13
+power : c expr13 -> expr14
+product : expr12 expr14 -> expr15
+sum : expr8 expr15 -> expr16
+const int 2 -> expr17
+const int 2 -> expr18
+power : a expr18 -> expr19
+product : expr17 expr19 -> expr20
+const int 2 -> expr21
+power : d expr21 -> expr22
+product : expr20 expr22 -> expr23
+sum : expr16 expr23 -> expr24
+const int 2 -> expr25
+const int 2 -> expr26
+power : c expr26 -> expr27
+product : expr25 expr27 -> expr28
+const int 2 -> expr29
+power : d expr29 -> expr30
+product : expr28 expr30 -> expr31
+sum : expr24 expr31 -> expr32
+const int 0 -> expr33
+equality : expr32 expr33 -> e
+prove : e -> f

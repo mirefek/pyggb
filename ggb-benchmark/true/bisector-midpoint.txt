@@ -1,0 +1,8 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+midpoint : A B -> C
+line_bisector : A B -> b
+intersect : b a -> D
+are_equal : C D -> expr0
+prove : expr0 -> c

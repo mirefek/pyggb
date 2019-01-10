@@ -1,0 +1,9 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+midpoint : a -> D
+midpoint : b -> E
+segment : E D -> d
+are_parallel : c d -> expr0
+prove : expr0 -> list1

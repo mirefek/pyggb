@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+midpoint : A B -> C
+const int 180 -> expr0
+const AngleSize 0.017453292519943295 -> expr1
+product : expr0 expr1 -> expr2
+rotate : A expr2 C -> A'
+equality : A' B -> expr3
+prove : expr3 -> b

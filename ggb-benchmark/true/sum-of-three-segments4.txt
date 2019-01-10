@@ -1,0 +1,352 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+circle : B A -> d
+intersect : c d -> _ C
+line : A B -> a
+line : A C -> b
+line : B C -> e
+point :  -> D
+orthogonal_line : D e -> f
+orthogonal_line : D b -> g
+orthogonal_line : D a -> h
+intersect : e f -> E
+intersect : b g -> F
+intersect : a h -> G
+segment : D E -> i
+segment : D F -> j
+segment : D G -> k
+orthogonal_line : A e -> l
+intersect : e l -> H
+segment : A H -> m
+sum : i j -> expr1
+sum : expr1 k -> expr2
+minus : expr2 m -> p
+sum : i j -> expr3
+minus : expr3 k -> expr4
+minus : expr4 m -> q
+sum : i k -> expr5
+minus : expr5 j -> expr6
+minus : expr6 m -> r
+sum : i m -> expr7
+minus : expr7 k -> expr8
+minus : expr8 j -> s
+minus : i j -> expr9
+minus : expr9 k -> expr10
+minus : expr10 m -> t
+sum : i k -> expr11
+sum : expr11 m -> expr12
+minus : expr12 j -> u
+sum : i j -> expr13
+sum : expr13 m -> expr14
+minus : expr14 k -> v
+product : p q -> expr15
+product : expr15 r -> expr16
+product : expr16 s -> expr17
+product : expr17 t -> expr18
+product : expr18 u -> expr19
+product : expr19 v -> w
+const int 8 -> expr20
+power : i expr20 -> expr21
+const int 8 -> expr22
+power : j expr22 -> expr23
+sum : expr21 expr23 -> expr24
+const int 8 -> expr25
+power : k expr25 -> expr26
+sum : expr24 expr26 -> expr27
+const int 8 -> expr28
+power : m expr28 -> expr29
+sum : expr27 expr29 -> expr30
+const int 4 -> expr31
+const int 2 -> expr32
+power : i expr32 -> expr33
+product : expr31 expr33 -> expr34
+const int 6 -> expr35
+power : j expr35 -> expr36
+product : expr34 expr36 -> expr37
+minus : expr30 expr37 -> expr38
+const int 4 -> expr39
+const int 2 -> expr40
+power : i expr40 -> expr41
+product : expr39 expr41 -> expr42
+const int 6 -> expr43
+power : k expr43 -> expr44
+product : expr42 expr44 -> expr45
+minus : expr38 expr45 -> expr46
+const int 4 -> expr47
+const int 2 -> expr48
+power : i expr48 -> expr49
+product : expr47 expr49 -> expr50
+const int 6 -> expr51
+power : m expr51 -> expr52
+product : expr50 expr52 -> expr53
+minus : expr46 expr53 -> expr54
+const int 6 -> expr55
+const int 4 -> expr56
+power : i expr56 -> expr57
+product : expr55 expr57 -> expr58
+const int 4 -> expr59
+power : j expr59 -> expr60
+product : expr58 expr60 -> expr61
+sum : expr54 expr61 -> expr62
+const int 6 -> expr63
+const int 4 -> expr64
+power : i expr64 -> expr65
+product : expr63 expr65 -> expr66
+const int 4 -> expr67
+power : k expr67 -> expr68
+product : expr66 expr68 -> expr69
+sum : expr62 expr69 -> expr70
+const int 6 -> expr71
+const int 4 -> expr72
+power : i expr72 -> expr73
+product : expr71 expr73 -> expr74
+const int 4 -> expr75
+power : m expr75 -> expr76
+product : expr74 expr76 -> expr77
+sum : expr70 expr77 -> expr78
+const int 4 -> expr79
+const int 6 -> expr80
+power : i expr80 -> expr81
+product : expr79 expr81 -> expr82
+const int 2 -> expr83
+power : j expr83 -> expr84
+product : expr82 expr84 -> expr85
+minus : expr78 expr85 -> expr86
+const int 4 -> expr87
+const int 6 -> expr88
+power : i expr88 -> expr89
+product : expr87 expr89 -> expr90
+const int 2 -> expr91
+power : k expr91 -> expr92
+product : expr90 expr92 -> expr93
+minus : expr86 expr93 -> expr94
+const int 4 -> expr95
+const int 6 -> expr96
+power : i expr96 -> expr97
+product : expr95 expr97 -> expr98
+const int 2 -> expr99
+power : m expr99 -> expr100
+product : expr98 expr100 -> expr101
+minus : expr94 expr101 -> expr102
+const int 4 -> expr103
+const int 2 -> expr104
+power : j expr104 -> expr105
+product : expr103 expr105 -> expr106
+const int 6 -> expr107
+power : k expr107 -> expr108
+product : expr106 expr108 -> expr109
+minus : expr102 expr109 -> expr110
+const int 4 -> expr111
+const int 2 -> expr112
+power : j expr112 -> expr113
+product : expr111 expr113 -> expr114
+const int 6 -> expr115
+power : m expr115 -> expr116
+product : expr114 expr116 -> expr117
+minus : expr110 expr117 -> expr118
+const int 6 -> expr119
+const int 4 -> expr120
+power : j expr120 -> expr121
+product : expr119 expr121 -> expr122
+const int 4 -> expr123
+power : k expr123 -> expr124
+product : expr122 expr124 -> expr125
+sum : expr118 expr125 -> expr126
+const int 6 -> expr127
+const int 4 -> expr128
+power : j expr128 -> expr129
+product : expr127 expr129 -> expr130
+const int 4 -> expr131
+power : m expr131 -> expr132
+product : expr130 expr132 -> expr133
+sum : expr126 expr133 -> expr134
+const int 4 -> expr135
+const int 6 -> expr136
+power : j expr136 -> expr137
+product : expr135 expr137 -> expr138
+const int 2 -> expr139
+power : k expr139 -> expr140
+product : expr138 expr140 -> expr141
+minus : expr134 expr141 -> expr142
+const int 4 -> expr143
+const int 6 -> expr144
+power : j expr144 -> expr145
+product : expr143 expr145 -> expr146
+const int 2 -> expr147
+power : m expr147 -> expr148
+product : expr146 expr148 -> expr149
+minus : expr142 expr149 -> expr150
+const int 4 -> expr151
+const int 2 -> expr152
+power : k expr152 -> expr153
+product : expr151 expr153 -> expr154
+const int 6 -> expr155
+power : m expr155 -> expr156
+product : expr154 expr156 -> expr157
+minus : expr150 expr157 -> expr158
+const int 6 -> expr159
+const int 4 -> expr160
+power : k expr160 -> expr161
+product : expr159 expr161 -> expr162
+const int 4 -> expr163
+power : m expr163 -> expr164
+product : expr162 expr164 -> expr165
+sum : expr158 expr165 -> expr166
+const int 4 -> expr167
+const int 6 -> expr168
+power : k expr168 -> expr169
+product : expr167 expr169 -> expr170
+const int 2 -> expr171
+power : m expr171 -> expr172
+product : expr170 expr172 -> expr173
+minus : expr166 expr173 -> expr174
+const int 4 -> expr175
+const int 2 -> expr176
+power : i expr176 -> expr177
+product : expr175 expr177 -> expr178
+const int 2 -> expr179
+power : j expr179 -> expr180
+product : expr178 expr180 -> expr181
+const int 4 -> expr182
+power : k expr182 -> expr183
+product : expr181 expr183 -> expr184
+sum : expr174 expr184 -> expr185
+const int 4 -> expr186
+const int 2 -> expr187
+power : i expr187 -> expr188
+product : expr186 expr188 -> expr189
+const int 2 -> expr190
+power : j expr190 -> expr191
+product : expr189 expr191 -> expr192
+const int 4 -> expr193
+power : m expr193 -> expr194
+product : expr192 expr194 -> expr195
+sum : expr185 expr195 -> expr196
+const int 4 -> expr197
+const int 2 -> expr198
+power : i expr198 -> expr199
+product : expr197 expr199 -> expr200
+const int 4 -> expr201
+power : j expr201 -> expr202
+product : expr200 expr202 -> expr203
+const int 2 -> expr204
+power : k expr204 -> expr205
+product : expr203 expr205 -> expr206
+sum : expr196 expr206 -> expr207
+const int 4 -> expr208
+const int 2 -> expr209
+power : i expr209 -> expr210
+product : expr208 expr210 -> expr211
+const int 4 -> expr212
+power : j expr212 -> expr213
+product : expr211 expr213 -> expr214
+const int 2 -> expr215
+power : m expr215 -> expr216
+product : expr214 expr216 -> expr217
+sum : expr207 expr217 -> expr218
+const int 4 -> expr219
+const int 2 -> expr220
+power : i expr220 -> expr221
+product : expr219 expr221 -> expr222
+const int 2 -> expr223
+power : k expr223 -> expr224
+product : expr222 expr224 -> expr225
+const int 4 -> expr226
+power : m expr226 -> expr227
+product : expr225 expr227 -> expr228
+sum : expr218 expr228 -> expr229
+const int 4 -> expr230
+const int 2 -> expr231
+power : i expr231 -> expr232
+product : expr230 expr232 -> expr233
+const int 4 -> expr234
+power : k expr234 -> expr235
+product : expr233 expr235 -> expr236
+const int 2 -> expr237
+power : m expr237 -> expr238
+product : expr236 expr238 -> expr239
+sum : expr229 expr239 -> expr240
+const int 4 -> expr241
+const int 4 -> expr242
+power : i expr242 -> expr243
+product : expr241 expr243 -> expr244
+const int 2 -> expr245
+power : j expr245 -> expr246
+product : expr244 expr246 -> expr247
+const int 2 -> expr248
+power : k expr248 -> expr249
+product : expr247 expr249 -> expr250
+sum : expr240 expr250 -> expr251
+const int 4 -> expr252
+const int 4 -> expr253
+power : i expr253 -> expr254
+product : expr252 expr254 -> expr255
+const int 2 -> expr256
+power : j expr256 -> expr257
+product : expr255 expr257 -> expr258
+const int 2 -> expr259
+power : m expr259 -> expr260
+product : expr258 expr260 -> expr261
+sum : expr251 expr261 -> expr262
+const int 4 -> expr263
+const int 4 -> expr264
+power : i expr264 -> expr265
+product : expr263 expr265 -> expr266
+const int 2 -> expr267
+power : k expr267 -> expr268
+product : expr266 expr268 -> expr269
+const int 2 -> expr270
+power : m expr270 -> expr271
+product : expr269 expr271 -> expr272
+sum : expr262 expr272 -> expr273
+const int 4 -> expr274
+const int 2 -> expr275
+power : j expr275 -> expr276
+product : expr274 expr276 -> expr277
+const int 2 -> expr278
+power : k expr278 -> expr279
+product : expr277 expr279 -> expr280
+const int 4 -> expr281
+power : m expr281 -> expr282
+product : expr280 expr282 -> expr283
+sum : expr273 expr283 -> expr284
+const int 4 -> expr285
+const int 2 -> expr286
+power : j expr286 -> expr287
+product : expr285 expr287 -> expr288
+const int 4 -> expr289
+power : k expr289 -> expr290
+product : expr288 expr290 -> expr291
+const int 2 -> expr292
+power : m expr292 -> expr293
+product : expr291 expr293 -> expr294
+sum : expr284 expr294 -> expr295
+const int 4 -> expr296
+const int 4 -> expr297
+power : j expr297 -> expr298
+product : expr296 expr298 -> expr299
+const int 2 -> expr300
+power : k expr300 -> expr301
+product : expr299 expr301 -> expr302
+const int 2 -> expr303
+power : m expr303 -> expr304
+product : expr302 expr304 -> expr305
+sum : expr295 expr305 -> expr306
+const int 40 -> expr307
+const int 2 -> expr308
+power : i expr308 -> expr309
+product : expr307 expr309 -> expr310
+const int 2 -> expr311
+power : j expr311 -> expr312
+product : expr310 expr312 -> expr313
+const int 2 -> expr314
+power : k expr314 -> expr315
+product : expr313 expr315 -> expr316
+const int 2 -> expr317
+power : m expr317 -> expr318
+product : expr316 expr318 -> expr319
+minus : expr306 expr319 -> expr320
+const int 0 -> expr321
+equality : expr320 expr321 -> n
+prove : n -> o

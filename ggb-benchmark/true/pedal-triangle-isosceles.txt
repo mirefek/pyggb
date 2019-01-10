@@ -1,0 +1,21 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+angular_bisector : A C B -> f
+intersect : f c -> D
+line_bisector : C D -> g
+line : A B -> h
+intersect : g h -> E
+circle : E C -> d
+point : d -> F
+orthogonal_line : F a -> i
+orthogonal_line : F b -> j
+orthogonal_line : F c -> k
+intersect : i a -> G
+intersect : j b -> H
+intersect : k c -> I
+segment : G I -> l
+segment : H I -> m
+equality : l m -> expr0
+prove : expr0 -> e

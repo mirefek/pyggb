@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+angular_bisector : A C B -> d
+intersect : c d -> D
+segment : A D -> e
+segment : D B -> f
+ratio : b a -> expr0
+ratio : e f -> expr1
+equality : expr0 expr1 -> g
+prove : g -> h

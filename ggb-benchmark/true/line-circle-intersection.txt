@@ -1,0 +1,9 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+point :  -> D
+circle : C D -> c
+intersect : c a -> F E
+are_collinear : A E B -> expr0
+prove : expr0 -> b

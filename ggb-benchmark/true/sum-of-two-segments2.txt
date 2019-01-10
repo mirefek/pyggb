@@ -1,0 +1,18 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+line : A B -> b
+point : b -> C
+segment : C A -> c
+segment : C B -> d
+sum : c d -> expr0
+minus : expr0 a -> expr1
+sum : c a -> expr2
+minus : expr2 d -> expr3
+product : expr1 expr3 -> expr4
+sum : a d -> expr5
+minus : expr5 c -> expr6
+product : expr4 expr6 -> expr7
+const int 0 -> expr8
+equality : expr7 expr8 -> e
+prove : e -> f

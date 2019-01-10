@@ -1,0 +1,20 @@
+point :  -> A
+point :  -> C
+segment : A C -> a
+point :  -> B
+segment : A B -> b
+line : C B -> c
+line : C b -> d
+line : A c -> e
+intersect : d e -> D
+segment : D B -> f
+intersect : f a -> O
+point : e -> E
+line : E O -> g
+intersect : g b -> G
+intersect : g d -> F
+intersect : g c -> H
+distance : E F -> expr0
+distance : G H -> expr1
+equality : expr0 expr1 -> expr2
+prove : expr2 -> h

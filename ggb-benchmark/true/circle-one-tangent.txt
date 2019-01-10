@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+tangent : B c -> a
+point : a -> C
+mirror : C B -> C'
+segment : A C -> b
+segment : A C' -> d
+segment : C B -> f
+segment : B C' -> g
+are_congruent : f g -> expr0
+prove : expr0 -> h

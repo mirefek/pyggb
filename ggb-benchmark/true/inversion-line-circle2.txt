@@ -1,0 +1,14 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+point :  -> C
+point :  -> D
+line : C D -> a
+point : a -> E
+point : a -> F
+mirror : C c -> C'
+mirror : E c -> E'
+mirror : D c -> D'
+mirror : F c -> F'
+are_concyclic : C' D' E' F' -> expr0
+prove : expr0 -> b

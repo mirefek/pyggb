@@ -1,0 +1,28 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+midpoint : A B -> C
+const int 45 -> expr0
+const AngleSize 0.017453292519943295 -> expr1
+product : expr0 expr1 -> expr2
+rotate : C expr2 A -> C'
+const int 45 -> expr3
+const AngleSize 0.017453292519943295 -> expr4
+product : expr3 expr4 -> expr5
+minus : expr5 -> expr6
+rotate : C expr6 B -> C'_1
+line : A C' -> b
+line : B C'_1 -> c
+intersect : c b -> D
+segment : A D -> d
+segment : D B -> e
+segment : B A -> f
+const int 2 -> expr7
+power : d expr7 -> expr8
+const int 2 -> expr9
+power : e expr9 -> expr10
+sum : expr8 expr10 -> expr11
+const int 2 -> expr12
+power : f expr12 -> expr13
+equality : expr11 expr13 -> expr14
+prove : expr14 -> g

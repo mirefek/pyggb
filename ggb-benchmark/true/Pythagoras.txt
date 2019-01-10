@@ -1,0 +1,17 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+orthogonal_line : A a -> b
+point : b -> C
+segment : A B -> expr0
+const int 2 -> expr1
+power : expr0 expr1 -> expr2
+segment : A C -> expr3
+const int 2 -> expr4
+power : expr3 expr4 -> expr5
+sum : expr2 expr5 -> expr6
+segment : B C -> expr7
+const int 2 -> expr8
+power : expr7 expr8 -> expr9
+equality : expr6 expr9 -> expr10
+prove : expr10 -> c

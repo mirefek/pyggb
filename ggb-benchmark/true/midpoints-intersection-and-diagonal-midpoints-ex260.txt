@@ -1,0 +1,21 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+point :  -> C
+segment : B C -> b
+point :  -> D
+segment : C D -> c
+segment : D A -> d
+midpoint : B A -> P
+midpoint : B C -> Q
+midpoint : C D -> R
+midpoint : D A -> S
+midpoint : B D -> V
+midpoint : A C -> U
+segment : P R -> e
+segment : S Q -> f
+intersect : f e -> J
+segment : V J -> g
+segment : J U -> h
+equality : g h -> expr0
+prove : expr0 -> i

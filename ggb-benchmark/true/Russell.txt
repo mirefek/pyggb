@@ -1,0 +1,16 @@
+point :  -> A
+point :  -> B
+line : A B -> g
+point : g -> C
+midpoint : A B -> D
+segment : A D -> f
+circle : C f -> c
+circle : B D -> d
+intersect : c d -> E _
+mirror : C E -> C'
+segment : C' C -> h
+const AngleSize 1.5707963267948966 -> expr1
+rotate : A expr1 B -> A'
+line : A' B -> i
+contained_by : C' i -> expr2
+prove : expr2 -> list1

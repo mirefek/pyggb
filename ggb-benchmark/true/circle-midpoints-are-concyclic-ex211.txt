@@ -1,0 +1,24 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+point :  -> C
+segment : B C -> b
+segment : A C -> c
+midpoint : B C -> A_1
+midpoint : A C -> B_1
+midpoint : B A -> C_1
+segment : C_1 B_1 -> d
+segment : B_1 A_1 -> e
+midpoint : C_1 B_1 -> D
+midpoint : B_1 A_1 -> E
+orthogonal_line : D d -> f
+orthogonal_line : E e -> g
+intersect : g f -> N
+circle : N A_1 -> h
+ray : A C -> i
+segment : N A_1 -> j
+orthogonal_line : A_1 j -> k
+intersect : k i -> K
+intersect : k a -> J
+are_concyclic : K J B C -> expr0
+prove : expr0 -> l

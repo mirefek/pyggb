@@ -1,0 +1,22 @@
+point :  -> A
+point :  -> B
+const int 11 -> expr0
+polygon : A B expr0 -> poligon1 f g h i j k l m n p q C D E F G H I J K
+segment : A G -> s
+segment : H D -> t
+intersect : s t -> L
+segment : A L -> l_1
+segment : A D -> m_1
+segment : A C -> r
+segment : B G -> n_1
+intersect : r n_1 -> M
+segment : A M -> p_1
+segment : A K -> q_1
+segment : I F -> r_1
+line : K A -> s_1
+line : I F -> t_1
+intersect : s_1 t_1 -> N
+segment : N A -> l_2
+segment : A F -> a_3
+equality : l_2 a_3 -> expr1
+prove : expr1 -> o

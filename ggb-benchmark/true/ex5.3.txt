@@ -1,0 +1,15 @@
+point :  -> A
+const AngleSize 1.5707963267948966 -> expr0
+point :  -> C
+rotate : A expr0 C -> D
+point :  -> B
+const AngleSize 1.5707963267948966 -> expr1
+minus : expr1 -> expr2
+rotate : B expr2 C -> F
+midpoint : B A -> E
+segment : C E -> f
+segment : F D -> g
+const int 2 -> expr3
+product : expr3 f -> expr4
+equality : expr4 g -> expr5
+prove : expr5 -> a

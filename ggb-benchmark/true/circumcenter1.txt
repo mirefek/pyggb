@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+line_bisector : B C -> d
+line_bisector : C A -> e
+intersect : d e -> D
+midpoint : A B -> E
+line : E D -> f
+line_bisector : A B -> g
+are_parallel : f g -> h
+prove : h -> i

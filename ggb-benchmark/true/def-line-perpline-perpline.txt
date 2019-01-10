@@ -1,0 +1,8 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+orthogonal_line : C a -> b
+orthogonal_line : C b -> c
+are_parallel : a c -> expr0
+prove : expr0 -> d

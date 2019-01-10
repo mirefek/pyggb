@@ -1,0 +1,15 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+midpoint : c -> D
+midpoint : a -> E
+midpoint : b -> F
+line : F B -> d
+line : A E -> e
+intersect : d e -> G
+midpoint : G C -> H
+segment : G D -> f
+segment : H C -> g
+equality : f g -> expr0
+prove : expr0 -> h

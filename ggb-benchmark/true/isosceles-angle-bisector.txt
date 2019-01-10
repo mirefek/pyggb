@@ -1,0 +1,11 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+point : c -> C
+angular_bisector : B A C -> a
+line : B C -> b
+intersect : a b -> D
+segment : B D -> d
+segment : D C -> e
+equality : d e -> f
+prove : f -> g

@@ -1,0 +1,8 @@
+point :  -> B
+const int 0 -> expr0
+const AngleSize 0.017453292519943295 -> expr1
+product : expr0 expr1 -> expr2
+point :  -> A
+rotate : B expr2 A -> B'
+equality : B B' -> expr3
+prove : expr3 -> a

@@ -1,0 +1,24 @@
+point :  -> A
+point :  -> B
+line : A B -> f
+point :  -> C
+point :  -> D
+line : C D -> g
+angular_bisector : g f -> h i
+point : g -> F
+orthogonal_line : F g -> j
+intersect : i j -> G
+circle : G F -> c
+intersect : f g -> H
+point :  -> E
+line : H E -> k
+intersect : c k -> I _
+segment : G I -> l
+line : E l -> m
+intersect : i m -> J
+orthogonal_line : J g -> n
+intersect : n g -> K
+segment : K J -> p
+segment : J E -> q
+equality : p q -> expr1
+prove : expr1 -> a

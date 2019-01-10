@@ -1,0 +1,18 @@
+point :  -> B
+point :  -> C
+segment : B C -> a
+point :  -> A
+segment : B A -> b
+segment : A C -> c
+midpoint : B C -> A_1
+midpoint : C A -> B_1
+midpoint : A B -> C_1
+line : C_1 B_1 -> d
+angular_bisector : A B C -> e
+intersect : d e -> A_2
+segment : B_1 A_1 -> f
+intersect : e f -> C_2
+segment : B_1 A_2 -> g
+segment : B_1 C_2 -> h
+equality : g h -> expr0
+prove : expr0 -> i

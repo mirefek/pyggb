@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+segment : A B -> a
+line : A B -> b
+point : b -> C
+segment : C A -> c
+segment : C B -> d
+sum : c d -> expr0
+equality : expr0 a -> e
+prove : e -> f

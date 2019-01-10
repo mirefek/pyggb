@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+circle : A B -> c
+point :  -> C
+midpoint : C A -> D
+circle : D C -> d
+intersect : c d -> F E
+tangent : C c -> b a
+intersect : c a -> G
+intersect : c b -> H
+equality : E G -> expr0
+prove : expr0 -> e

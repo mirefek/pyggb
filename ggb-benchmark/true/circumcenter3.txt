@@ -1,0 +1,11 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+line : C A -> b
+line : B C -> c
+line_bisector : C B -> d
+line_bisector : B A -> e
+line_bisector : A C -> f
+are_concurrent : d e f -> expr0
+prove : expr0 -> g

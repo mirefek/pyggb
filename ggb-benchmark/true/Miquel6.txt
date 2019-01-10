@@ -1,0 +1,16 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> c
+point : c -> D
+point :  -> E
+circle : A E D -> d
+point : d -> F
+circle : A B F -> e
+circle : C D E -> f
+point : f -> G
+circle : B G C -> g
+intersect : e g -> H _
+circle : G E F -> h
+are_concyclic : E F G H -> a
+prove : a -> b

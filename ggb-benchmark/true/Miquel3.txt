@@ -1,0 +1,14 @@
+point :  -> A
+point :  -> B
+point :  -> C
+polygon : A B C -> poly1 c a b
+point : c -> D
+point : a -> E
+point : b -> F
+circle : A D F -> d
+circle : B D E -> e
+circle : C F E -> f
+intersect : d e -> _ G
+intersect : e f -> _ H
+equality : G H -> expr2
+prove : expr2 -> g

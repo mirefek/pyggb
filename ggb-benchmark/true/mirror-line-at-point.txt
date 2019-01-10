@@ -1,0 +1,13 @@
+point :  -> A
+point :  -> B
+line : A B -> a
+point :  -> C
+mirror : a C -> a'
+line : A C -> b
+line : B C -> c
+intersect : a' c -> D
+intersect : a' b -> E
+segment : A C -> d
+segment : C E -> e
+equality : d e -> f
+prove : f -> g
