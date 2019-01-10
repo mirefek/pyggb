@@ -67,8 +67,8 @@ class Command:
             if o is not None: o.data = x
 
     def __str__(self):
-        inputs_str = ' '.join(self.inputs)
-        outputs_str = ' '.join([s if s is not None else "_" for s in self.outputs])
+        inputs_str = ' '.join([x.label for x in self.inputs])
+        outputs_str = ' '.join([x.label if x is not None else "_" for x in self.outputs])
         return "{} : {} -> {}".format(
             self.name, inputs_str, outputs_str
         )
