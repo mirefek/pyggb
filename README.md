@@ -11,7 +11,7 @@ Directory containing decoded dataset from GeoGebra http://dev.geogebra.org/trac/
 Decoded constructions to pictures
 ------
 * random_constr.py (main file)
-* preview.py (interactive executable)
+* preview.py (interactive executable -- use arrows, space bar, escape to quit)
 
 Other files
 -----
