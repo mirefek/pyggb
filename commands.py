@@ -42,6 +42,29 @@ def are_concurrent_lll(l1, l2, l3):
     x = intersect_ll(l1, l2)
     return gt.Boolean(np.isclose(np.dot(x.a, l3.n), l3.c))
 
+def are_concurrent(o1, o2, o3):
+    cand = []
+    try:
+        #if True:
+        if isinstance(o1, gt.Line) and isinstance(o2, gt.Line):
+            cand = intersect_ll(o1, o2)
+        elif isinstance(o1, gt.Line) and isinstance(o2, gt.Circle):
+            cand = intersect_lc(o1, o2)
+        elif isinstance(o1, gt.Circle) and isinstance(o2, gt.Line):
+            cand = intersect_cl(o1, o2)
+        elif isinstance(o1, gt.Circle) and isinstance(o2, gt.Circle):
+            cand = intersect_cc(o1, o2)
+    except: pass
+
+    if not isinstance(cand, (tuple,list)): cand = [cand]
+
+    for p in cand:
+        for obj in (o1,o2,o3):
+            if not obj.contains(p.a): break
+        else: return gt.Boolean(True)
+
+    return gt.Boolean(False)
+
 def are_concyclic_pppp(p1, p2, p3, p4):
 
     z1, z2, z3, z4 = (gt.a_to_cpx(p.a) for p in (p1, p2, p3, p4))
@@ -49,7 +72,16 @@ def are_concyclic_pppp(p1, p2, p3, p4):
     return gt.Boolean(np.isclose(cross_ratio.imag, 0))
 
 def are_congruent_aa(a1, a2):
-    return gt.Boolean(np.isclose((a1.angle-a2.angle+1)%(2*np.pi), 1))
+    #print(a1.angle, a2.angle)
+    result = np.isclose((a1.angle-a2.angle+1)%(2*np.pi), 1)
+    result = (result or np.isclose((a1.angle+a2.angle+1)%(2*np.pi), 1))
+    return gt.Boolean(result)
+
+def are_complementary_aa(a1, a2):
+    #print(a1.angle, a2.angle)
+    result = np.isclose((a1.angle-a2.angle)%(2*np.pi), np.pi)
+    result = (result or np.isclose((a1.angle+a2.angle)%(2*np.pi), np.pi))
+    return gt.Boolean(result)
 
 def are_congruent_ss(s1, s2):
     l1, l2 = (
@@ -535,6 +567,18 @@ def tangent_pc(point, circle):
     if type(intersections) in (tuple, list) and len(intersections) == 2:
         return [line_pp(point, x) for x in intersections]
     else: return polar
+
+def touches_cc(c1, c2):
+    lens = c1.r, c2.r, np.linalg.norm(c1.c-c2.c)
+    return gt.Boolean(np.isclose(sum(lens), 2*max(lens)))
+
+def touches_lc(line, circle):
+    return gt.Boolean(
+        np.isclose(circle.r, np.abs(np.dot(line.n, circle.c) - line.c) )
+    )
+
+def touches_cl(circle, line):
+    return touches_lc(line, circle)
 
 def translate_pv(point, vector):
     return gt.Point(point.a + vector.v)

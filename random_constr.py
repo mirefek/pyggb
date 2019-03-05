@@ -161,7 +161,7 @@ class Construction:
                     if command.name == "prove":
                         [inp] = command.input_elements
                         [out] = command.output_elements
-                        del self.element_dict[out.label]
+                        if out is not None: del self.element_dict[out.label]
                         assert(self.to_prove is None)
                         self.to_prove = inp
 
@@ -238,7 +238,8 @@ class Construction:
         ))
 
 if __name__ == "__main__":
-    datadir = "ggb-benchmark/true"
+    #datadir = "ggb-benchmark/true"
+    datadir = "patrik"
     construction = Construction()
     for filename in os.listdir(datadir):
         if not filename.endswith(".txt"): continue
