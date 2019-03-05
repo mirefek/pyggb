@@ -1,0 +1,14 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+circle : A B C -> aux1
+center : aux1 -> E
+line : A C -> aux2
+line : D E -> aux3
+intersect : aux2 aux3 -> F
+circle : A B C -> aux4
+circle : A E F -> aux5
+line : B F -> aux6
+are_concurrent : aux4 aux5 aux6 -> thm
+prove : thm -> _

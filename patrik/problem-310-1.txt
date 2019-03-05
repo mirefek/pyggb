@@ -1,0 +1,9 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> aux1
+center : aux1 -> D
+midpoint : A D -> E
+midpoint : B D -> F
+are_concyclic : A B E F -> thm
+prove : thm -> _

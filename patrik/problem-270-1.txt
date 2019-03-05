@@ -1,0 +1,9 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+angular_bisector : B C A -> E
+line : A B -> aux1
+intersect : E aux1 -> F
+are_collinear : A D F -> thm
+prove : thm -> _

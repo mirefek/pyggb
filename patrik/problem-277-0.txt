@@ -1,0 +1,8 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+angular_bisector : B D C -> E
+angular_bisector : C D A -> F
+are_perpendicular : E F -> thm
+prove : thm -> _

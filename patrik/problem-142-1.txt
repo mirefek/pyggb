@@ -1,0 +1,11 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+circle : A B C -> aux1
+center : aux1 -> E
+line : B E -> aux2
+orthogonal_line : D aux2 -> F
+circle : A D E -> aux3
+touches : F aux3 -> thm
+prove : thm -> _

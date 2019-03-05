@@ -1,0 +1,17 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+circle : A B C -> aux1
+center : aux1 -> E
+line : A C -> aux2
+line : D E -> aux3
+intersect : aux2 aux3 -> F
+segment : B C -> aux4
+segment : B F -> aux5
+segment : E C -> aux6
+segment : E D -> aux7
+angle : C B F -> aux8
+angle : C E D -> aux9
+are_complementary : aux8 aux9 -> thm
+prove : thm -> _

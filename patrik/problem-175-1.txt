@@ -1,0 +1,11 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+circle : A C D -> aux1
+center : aux1 -> E
+line : B E -> aux2
+orthogonal_line : A aux2 -> F
+line : B E -> aux3
+are_perpendicular : aux3 F -> thm
+prove : thm -> _

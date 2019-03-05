@@ -1,0 +1,9 @@
+point :  -> A
+point :  -> B
+point :  -> C
+line : B C -> aux1
+orthogonal_line : A aux1 -> D
+line : B C -> aux2
+intersect : D aux2 -> E
+are_collinear : B C E -> thm
+prove : thm -> _

@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> aux1
+center : aux1 -> D
+circle : A B D -> aux2
+center : aux2 -> E
+midpoint : D E -> F
+are_collinear : D E F -> thm
+prove : thm -> _

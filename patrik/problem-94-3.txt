@@ -1,0 +1,14 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+midpoint : C D -> E
+midpoint : A E -> F
+segment : B E -> aux1
+segment : B F -> aux2
+segment : F B -> aux3
+segment : F D -> aux4
+angle : E B F -> aux5
+angle : B F D -> aux6
+are_congruent : aux5 aux6 -> thm
+prove : thm -> _

@@ -1,0 +1,9 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> aux1
+center : aux1 -> D
+angular_bisector : B D C -> E
+line : B C -> aux2
+are_perpendicular : aux2 E -> thm
+prove : thm -> _

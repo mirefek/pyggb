@@ -1,0 +1,14 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+midpoint : A C -> E
+midpoint : D E -> F
+segment : C B -> aux1
+segment : C F -> aux2
+segment : F C -> aux3
+segment : F D -> aux4
+angle : B C F -> aux5
+angle : C F D -> aux6
+are_complementary : aux5 aux6 -> thm
+prove : thm -> _

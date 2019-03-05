@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+point :  -> C
+line : B C -> aux1
+orthogonal_line : A aux1 -> D
+line : B C -> aux2
+intersect : D aux2 -> E
+line : B A -> aux3
+orthogonal_line : E aux3 -> F
+line : A B -> aux4
+are_perpendicular : aux4 F -> thm
+prove : thm -> _

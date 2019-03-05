@@ -1,0 +1,8 @@
+point :  -> A
+point :  -> B
+point :  -> C
+angular_bisector : B A C -> D
+angular_bisector : A B C -> E
+angular_bisector : B C A -> F
+are_concurrent : D E F -> thm
+prove : thm -> _

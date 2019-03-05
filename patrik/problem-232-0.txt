@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+line : B D -> aux1
+orthogonal_line : A aux1 -> E
+line : C D -> aux2
+intersect : E aux2 -> F
+are_collinear : C D F -> thm
+prove : thm -> _

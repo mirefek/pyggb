@@ -1,0 +1,16 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> aux1
+center : aux1 -> D
+angular_bisector : B D C -> E
+line : A B -> aux2
+intersect : E aux2 -> F
+segment : B A -> aux3
+segment : B C -> aux4
+segment : C B -> aux5
+segment : C F -> aux6
+angle : A B C -> aux7
+angle : B C F -> aux8
+are_congruent : aux7 aux8 -> thm
+prove : thm -> _

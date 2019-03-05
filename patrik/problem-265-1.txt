@@ -1,0 +1,16 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+line : B A -> aux1
+orthogonal_line : D aux1 -> E
+line : A C -> aux2
+intersect : E aux2 -> F
+segment : A B -> aux3
+segment : A C -> aux4
+segment : B A -> aux5
+segment : B F -> aux6
+angle : B A C -> aux7
+angle : A B F -> aux8
+are_congruent : aux7 aux8 -> thm
+prove : thm -> _

@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+midpoint : A C -> E
+midpoint : B E -> F
+circle : A B E -> aux1
+circle : B D F -> aux2
+touches : aux1 aux2 -> thm
+prove : thm -> _

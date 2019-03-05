@@ -1,0 +1,12 @@
+point :  -> A
+point :  -> B
+point :  -> C
+circle : A B C -> aux1
+center : aux1 -> D
+line : A B -> aux2
+line : C D -> aux3
+intersect : aux2 aux3 -> E
+angular_bisector : B D E -> F
+circle : B C D -> aux4
+touches : F aux4 -> thm
+prove : thm -> _

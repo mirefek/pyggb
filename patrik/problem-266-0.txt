@@ -1,0 +1,10 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+line : B A -> aux1
+orthogonal_line : D aux1 -> E
+angular_bisector : B C A -> F
+circle : A B C -> aux2
+are_concurrent : aux2 E F -> thm
+prove : thm -> _

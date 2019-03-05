@@ -1,0 +1,13 @@
+point :  -> A
+point :  -> B
+point :  -> C
+line : B C -> aux1
+orthogonal_line : A aux1 -> D
+line : B C -> aux2
+intersect : D aux2 -> E
+line : A C -> aux3
+orthogonal_line : B aux3 -> F
+circle : A B E -> aux4
+line : A C -> aux5
+are_concurrent : aux4 aux5 F -> thm
+prove : thm -> _

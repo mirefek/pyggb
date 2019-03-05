@@ -1,0 +1,11 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+circle : A B C -> aux1
+center : aux1 -> E
+angular_bisector : B C A -> F
+circle : A B C -> aux2
+line : D E -> aux3
+are_concurrent : aux2 aux3 F -> thm
+prove : thm -> _

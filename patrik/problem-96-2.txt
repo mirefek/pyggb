@@ -1,0 +1,8 @@
+point :  -> A
+point :  -> B
+point :  -> C
+midpoint : A B -> D
+midpoint : C D -> E
+midpoint : D E -> F
+are_collinear : C E F -> thm
+prove : thm -> _
