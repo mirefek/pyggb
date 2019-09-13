@@ -154,7 +154,7 @@ class Ray(Line):
         pos_endpoints = [
             point
             for point in line_endpoints
-            if np.dot(self.v, self.start_point) > 0
+            if np.dot(self.v, point - self.start_point) > 0
         ]
         if len(pos_endpoints) == 0: return None
         elif len(pos_endpoints) == 1:
